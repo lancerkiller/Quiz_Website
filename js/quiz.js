@@ -1,8 +1,8 @@
-console.log("quiz function");
+const start_btn = document.querySelector(".start_button");
 
-let question = {
+const questions = {
   1: "what is github",
   2: "Can you push and pull at the same time?",
 };
 
-console.log(question[1]);
+console.log(questions[1]);

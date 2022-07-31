@@ -1,1 +1,1 @@
-alert("welcome to quiz website");
+//alert("welcome to quiz website");
