@@ -1,15 +1,16 @@
+console.log("welcome to add some  code vishwa,");
 const start_btn = document.querySelector(".start_button");
 const ques_div = document.getElementById("ques_div");
 var storage_answer = [];
 
 const questions = [
   {
-    question: "what is github?",
+    question: "what is github?1",
     choice1: "youtube",
     choice2: "Pokemon ",
     choice3: "Pikachu",
     choice4: "pull and push coding",
-    Answer: "choice4",
+    Answer: "choice",
   },
   {
     question: "what is github2?",
@@ -41,6 +42,11 @@ function verify_ans(client_ans) {
 */
 
 function display_question() {
+  questions.forEach((question) => {
+    console.log(question);
+    let btn = document.createElement("button");
+  });
+
   /*
   for (let i = 1; i <= 4; i++) {
     //ques_div.innerHTML = questions[i];
