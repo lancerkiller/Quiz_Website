@@ -1,8 +1,10 @@
 console.log("welcome to add some  code vishwa,");
 const start_btn = document.querySelector(".start_button");
 const ques_div = document.getElementById("ques_div");
+const choices = Array.from(document.querySelectorAll(".choice-text"));
+const progressText = document.getElementById("progressText");
 var storage_answer = [];
-
+var final_answers;
 const questions = [
   {
     question: "what is github?1",
@@ -10,7 +12,7 @@ const questions = [
     choice2: "Pokemon ",
     choice3: "Pikachu",
     choice4: "pull and push coding",
-    Answer: "choice",
+    Answer: "1",
   },
   {
     question: "what is github2?",
@@ -18,7 +20,7 @@ const questions = [
     choice2: "Pokemon ",
     choice3: "Pikachu",
     choice4: "pull and push coding",
-    Answer: "choice4",
+    Answer: "2",
   },
   {
     question: "what is github3?",
@@ -26,56 +28,62 @@ const questions = [
     choice2: "Pokemon ",
     choice3: "Pikachu",
     choice4: "pull and push coding",
-    Answer: "choice4",
+    Answer: "3",
   },
 ];
 
 const MAX_QUESTION = 3;
+var questionCounter = 0;
 
-/*
-function verify_ans(client_ans) {
-  if (client_ans == questions[questions.Answer]) {
-    alert("red");
-  }
-  console.log(client_ans);
+function game_start() {
+  availableQuestion = [...questions];
+  display_question();
 }
-*/
-
+var acceptingAnswers;
 function display_question() {
-  questions.forEach((question) => {
-    console.log(question);
-    let btn = document.createElement("button");
+  console.log(availableQuestion);
+  questionCounter++;
+  const questionIndex = Math.floor(Math.random() * availableQuestion.length);
+  currentQuestion = availableQuestion[questionIndex];
+  progressText.innerHTML = currentQuestion.question;
+
+  choices.forEach((choice) => {
+    const number = choice.dataset["number"];
+    choice.innerHTML = currentQuestion["choice" + number];
   });
 
+  acceptingAnswers = true;
   /*
   for (let i = 1; i <= 4; i++) {
-    //ques_div.innerHTML = questions[i];
-    let btn = document.createElement("button");
-    btn.id = "button" + i;
-    let btn_text = document.createTextNode(questions[i]);
+    var btn = document.createElement("button");
+    btn.id = "btn" + i;
+    console.log(btn.id);
+    var btn_text = document.createTextNode(currentQuestion["choice" + i]);
     btn.appendChild(btn_text);
     ques_div.appendChild(btn);
-    btn.onclick = function () {
-      verify_ans(btn.textContent);
-    };
   }
   */
 }
+var correct_answers;
+choices.forEach((choice) => {
+  choice.addEventListener("click", (e) => {
+    if (!acceptingAnswers) return;
 
-display_question();
-//alert(btn.textContent);
-/*
-function store_ans(ans) {
-  storage_answer.push(ans);
-}
+    //acceptingAnswers = false;
+    const selectedChoice = e.target;
+    const selectedAnswer = selectedChoice.dataset["number"];
 
-const button1 = document.getElementById("button1");
-button1.onclick = function () {
-  alert(button1.textContent);
+    if (selectedAnswer == currentQuestion.Answer) {
+      alert("correct");
+      correct_answers = true;
 
-  store_ans(questions[1]);
-  console.log(storage_answer);
-};
-*/
+      setTimeout(() => {
+        display_question();
+      }, 500);
+    } else {
+      alert("nope");
+    }
+  });
+});
 
-//buttons.style.color = "red";
+game_start();
