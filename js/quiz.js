@@ -3,11 +3,12 @@ const start_btn = document.querySelector(".start_button");
 const ques_div = document.getElementById("ques_div");
 const choices = Array.from(document.querySelectorAll(".choice-text"));
 const progressText = document.getElementById("progressText");
+const progressBar = document.getElementById("progressBarFull");
 var storage_answer = [];
 var final_answers;
 const questions = [
   {
-    question: "what is github?1",
+    question: "Question 1?",
     choice1: "youtube",
     choice2: "Pokemon ",
     choice3: "Pikachu",
@@ -15,7 +16,7 @@ const questions = [
     Answer: "1",
   },
   {
-    question: "what is github2?",
+    question: "Question 2",
     choice1: "youtube",
     choice2: "Pokemon ",
     choice3: "Pikachu",
@@ -23,7 +24,7 @@ const questions = [
     Answer: "2",
   },
   {
-    question: "what is github3?",
+    question: "Question 3",
     choice1: "youtube",
     choice2: "Pokemon ",
     choice3: "Pikachu",
@@ -41,8 +42,14 @@ function game_start() {
 }
 var acceptingAnswers;
 function display_question() {
+  if (availableQuestion.length == 0 || questionCounter > MAX_QUESTION) {
+    return window.location.assign("/end.html");
+  }
   console.log(availableQuestion);
   questionCounter++;
+
+  progressBar.style.width = `${(questionCounter / MAX_QUESTION) * 100}% `;
+  console.log(questionCounter);
   const questionIndex = Math.floor(Math.random() * availableQuestion.length);
   currentQuestion = availableQuestion[questionIndex];
   progressText.innerHTML = currentQuestion.question;
@@ -53,6 +60,9 @@ function display_question() {
   });
 
   acceptingAnswers = true;
+
+  availableQuestion.splice(questionIndex, 1);
+
   /*
   for (let i = 1; i <= 4; i++) {
     var btn = document.createElement("button");
@@ -64,25 +74,25 @@ function display_question() {
   }
   */
 }
-var correct_answers;
+
 choices.forEach((choice) => {
   choice.addEventListener("click", (e) => {
-    if (!acceptingAnswers) return;
+    if (!acceptingAnswers) {
+      return;
+    }
 
-    //acceptingAnswers = false;
+    acceptingAnswers = false;
     const selectedChoice = e.target;
     const selectedAnswer = selectedChoice.dataset["number"];
+    let classApply =
+      selectedAnswer == currentQuestion.Answer ? "correct" : "wrong";
 
-    if (selectedAnswer == currentQuestion.Answer) {
-      alert("correct");
-      correct_answers = true;
+    selectedChoice.parentElement.classList.add(classApply);
 
-      setTimeout(() => {
-        display_question();
-      }, 500);
-    } else {
-      alert("nope");
-    }
+    setTimeout(() => {
+      selectedChoice.parentElement.classList.remove(classApply);
+      display_question();
+    }, 500);
   });
 });
 

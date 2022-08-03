@@ -1,14 +1,75 @@
-#button1, #button2, #button3, #button4 {
-    padding: 10px;
-    background-color: #4CAF50;
-    border: 0;
+.choice-container {
+
+
+
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+
+}
+
+.choice-container {
+    display: flex;
+    margin-bottom: 0.8rem;
+    width: 100%;
     border-radius: 3px;
-    font-size: 1.2rem;
+    background-color: #4CAF50;
+    font-size: 1.5rem;
+    min-width: 80rem;
+}
+
+.choice-container:hover {
     cursor: pointer;
+    transform: scale(1.02);
+    transform: transform 100ms;
+}
+
+.choice-text {
+    border: 0;
+    color: white;
+}
+
+.correct {
+    background-color: green;
+}
+
+.wrong {
+    background-color: red;
+}
+
+#progressContainer {
+    margin-left: 20px;
+}
+
+#progressBar {
+    border: 0.2rem solid rgb(11, 233, 36);
+    width: 20rem;
+    height: 3rem;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+#progressBarFull {
+    height: 100%;
+    background-color: rgb(11, 233, 36);
+    width: 0;
+
+
+}
+
+:root {
+    background-color: rgb(29, 26, 26);
 }
 
 body {
-
+    box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+}
+
+#progressText {
+    font-size: 5.3rem;
+    color: #fff;
+    margin-bottom: 5rem;
 }

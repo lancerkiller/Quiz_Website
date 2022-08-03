@@ -16,8 +16,14 @@
     <h1>This is Quiz Website</h1>
     <h3 style="text-align:center;">by lancer</h3>
 
-    <h1 id="progressText"></h1>
+
+    <div id="progressContainer">
+        <div id="progressBar">
+            <div id="progressBarFull"></div>
+        </div>
+    </div>
     <div id="ques_div" style="text-align:center;">
+        <h1 id="progressText"></h1>
         <div class="choice-container">
             <p class="choice-text" data-number="1">Choice1</p>
         </div>
@@ -46,13 +52,6 @@
     button {
         display: block;
         margin-bottom: 5px;
-    }
-
-    .choice-text {
-        display: block;
-        cursor: pointer;
-        background-color: aqua;
-        padding: 20px;
     }
 </style>
 
