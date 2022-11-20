@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-11-20T17:06:25.168Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" etag="9PNB0rHHC7-UYwyJEP9r" version="20.5.3" type="github">
+<mxfile host="app.diagrams.net" modified="2022-11-20T19:19:51.530Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" etag="ly2vBRiCFTOL6WOigtIS" version="20.5.3" type="github">
   <diagram id="prtHgNgQTEPvFCAcTncT" name="Page-1">
-    <mxGraphModel dx="898" dy="458" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="898" dy="510" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -8,16 +8,18 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="SP-LTOMMdH5l47RVkK4U-1" value="Prison system open up all the prisoner&#39;s gate." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
-          <mxGeometry x="280" y="30" width="120" height="60" as="geometry" />
+          <mxGeometry x="330" y="40" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="SP-LTOMMdH5l47RVkK4U-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="SP-LTOMMdH5l47RVkK4U-2" target="SP-LTOMMdH5l47RVkK4U-6">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="SP-LTOMMdH5l47RVkK4U-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" target="SP-LTOMMdH5l47RVkK4U-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="390" y="230" as="sourcePoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="SP-LTOMMdH5l47RVkK4U-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fillColor=#d5e8d4;strokeColor=#000000;" edge="1" parent="1" source="SP-LTOMMdH5l47RVkK4U-2" target="SP-LTOMMdH5l47RVkK4U-10">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="SP-LTOMMdH5l47RVkK4U-2" value="Exploit the prison system&amp;nbsp;&amp;nbsp;" style="whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="280" y="140" width="120" height="60" as="geometry" />
+          <mxGeometry x="330" y="150" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="SP-LTOMMdH5l47RVkK4U-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="SP-LTOMMdH5l47RVkK4U-6" target="SP-LTOMMdH5l47RVkK4U-8">
           <mxGeometry relative="1" as="geometry" />
@@ -31,11 +33,26 @@
         <mxCell id="SP-LTOMMdH5l47RVkK4U-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;" edge="1" parent="1" source="SP-LTOMMdH5l47RVkK4U-10" target="SP-LTOMMdH5l47RVkK4U-12">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="SP-LTOMMdH5l47RVkK4U-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;" edge="1" parent="1" source="SP-LTOMMdH5l47RVkK4U-10" target="SP-LTOMMdH5l47RVkK4U-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SP-LTOMMdH5l47RVkK4U-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="SP-LTOMMdH5l47RVkK4U-10" target="SP-LTOMMdH5l47RVkK4U-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SP-LTOMMdH5l47RVkK4U-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="SP-LTOMMdH5l47RVkK4U-10" target="SP-LTOMMdH5l47RVkK4U-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="SP-LTOMMdH5l47RVkK4U-10" value="Exploit through Bluetooth devices (laptop)&amp;nbsp;" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="420" y="250" width="120" height="60" as="geometry" />
+          <mxGeometry x="470" y="250" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="SP-LTOMMdH5l47RVkK4U-12" value="using hciconfig to scan the bluetooth devices" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="420" y="370" width="120" height="60" as="geometry" />
+          <mxGeometry x="470" y="370" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="SP-LTOMMdH5l47RVkK4U-16" value="using MultiBlue Dongle to get scan the Bluetooth devices" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="610" y="370" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="SP-LTOMMdH5l47RVkK4U-17" value="using spooftooth to spoof the Bluetooth devices&amp;nbsp;" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="330" y="370" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
